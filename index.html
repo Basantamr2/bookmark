@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/download-removebg-preview.png">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container mt-5 text-center">
+        <h1 class="pt-2 position-relative d-inline-block">Bookmarker</h1>
+        <h2 class=" pt-4 mb-4"><i class="fa-solid fa-bookmark me-2"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark ms-2"></i></h2>
+        <div class="px-3 text-start">
+            <label for="name" class="fw-semibold"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+            <input type="text" id="name" placeholder="Bookmark Name" class="form-control w-100 mt-2 mb-4">
+            <label for="url" class="fw-semibold"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+            <input type="text" id="url" placeholder="Website URL" class="form-control w-100 mt-2">
+        </div>
+        <button class="first btn text-white my-4 px-5" onclick="create()">Submit</button>
+        <div class="allTable ">
+            <table class="table mt-4">
+                <thead class="">
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="items">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
